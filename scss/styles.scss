@@ -1,0 +1,24 @@
+.draughts {
+
+    width: 400px;
+    height: 400px;
+    
+    &>div {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    & .board {
+        &>div {
+            width: 10%;
+            height: 10%;
+            &:nth-child(2n+2):nth-child(-n+10), &:nth-child(20n + 11) {
+                background-color: grey;
+            }
+        }
+    }
+    
+    & .pieces {
+    }
+}
